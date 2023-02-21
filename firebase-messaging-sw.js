@@ -17,6 +17,9 @@ importScripts('https://www.gstatic.com/firebasejs/8.4.1/firebase-messaging.js');
 
   /*messaging.onMessage((payload) => {
   console.log('Message received. ', payload);*/
+
+  //experimentalSetDeliveryMetricsExportedToBigQueryEnabled(messaging, true);
+
   messaging.onBackgroundMessage(function(payload) {
     console.log('Received background message ', payload);
 
